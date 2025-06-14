@@ -1,0 +1,42 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.visualizer-container {
+  text-align: center;
+  max-width: 600px;
+}
+.intro-text {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+.lyrics-display {
+  margin-top: 30px;
+  font-size: 1.4em;
+  background-color: #111;
+  padding: 20px;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #111;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+button:hover {
+  background: #222;
+}

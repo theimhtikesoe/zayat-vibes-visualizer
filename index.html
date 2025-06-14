@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zayat Vibes Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="visualizer-container">
+    <h1>🌌 Zayat Vibes Visualizer</h1>
+    <p class="intro-text">Feel the flow. See the soul. Rhyzoe in every beat.</p>
+
+    <audio id="bgMusic" controls autoplay loop>
+      <source src="https://files.catbox.moe/7kg3cv.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="lyrics-display" id="lyricsDisplay">"ငါ့အသံနဲ့ ပြည့်နေတဲ့ ငါ့ရဲ့တောင်ကြီး"</div>
+
+    <button onclick="showRandomLyric()">🔁 Show Random Line</button>
+  </div>
+
+  <script>
+    const lyrics = [
+      "ငါ့အသံနဲ့ ပြည့်နေတဲ့ ငါ့ရဲ့တောင်ကြီး",
+      "လမ်းမတော်ထဲမှာလည်း beat တောင် ရူးနေတယ်",
+      "သူတို့ vibe ကို clone မလုပ်ဘူး — ငါ့ soul original",
+      "မြစ်တစ်စင်းထဲက မြက်ပင်လို — underground vibe ထွက်နေတယ်"
+    ];
+
+    function showRandomLyric() {
+      const line = lyrics[Math.floor(Math.random() * lyrics.length)];
+      document.getElementById("lyricsDisplay").innerText = `"${line}"`;
+    }
+  </script>
+</body>
+</html>
